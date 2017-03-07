@@ -101,7 +101,8 @@ gulp.task('electron:build:osx', function () {
     gulp.src(['dist/**/*'])
         .pipe(electron({
             version: '1.4.15',
-            platform: 'darwin'
+            platform: 'darwin',
+            token: args.token ? args.token : null
         }))
         .pipe(symdest('packages/osx'));
 });
@@ -116,7 +117,7 @@ gulp.task('electron:build:linux', function () {
             version: '1.4.15',
             platform: 'linux',
             arch: 'x64',
-            token: args.token
+            token: args.token ? args.token : null
         }))
         .pipe(symdest('packages/linux'));
 });
@@ -129,7 +130,8 @@ gulp.task('electron:build:win', function () {
     gulp.src(['dist/**/*'])
         .pipe(electron({
             version: '1.4.15',
-            platform: 'win32'
+            platform: 'win32',
+            token: args.token ? args.token : null
         }))
         .pipe(symdest('packages/win'));
 });

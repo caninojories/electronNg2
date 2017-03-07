@@ -1,0 +1,55 @@
+{
+  "name": "electronNg2",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "scripts": {
+    "build": "gulp build",
+    "start": "npm run build && electron dist",
+    "package": "npm run build && gulp electron:package",
+    "postinstall": "concurrently \"bower install\""
+  },
+  "dependencies": {
+    "@angular/common": "2.4.9",
+    "@angular/compiler": "2.4.9",
+    "@angular/core": "2.4.9",
+    "@angular/forms": "2.4.9",
+    "@angular/http": "2.4.9",
+    "@angular/platform-browser": "2.4.9",
+    "@angular/platform-browser-dynamic": "2.4.9",
+    "@angular/router": "3.4.9",
+    "@angular/upgrade": "2.4.9",
+    "angular-in-memory-web-api": "0.3.0",
+    "core-js": "2.4.1",
+    "jasmine": "2.5.3",
+    "reflect-metadata": "0.1.10",
+    "rxjs": "5.2.0",
+    "systemjs": "0.20.9",
+    "zone.js": "0.7.7"
+  },
+  "devDependencies": {
+    "@types/core-js": "0.9.35",
+    "@types/electron": "1.4.33",
+    "@types/jasmine": "2.5.43",
+    "@types/node": "7.0.5",
+    "bower": "1.8.0",
+    "concurrently": "3.4.0",
+    "del": "2.2.2",
+    "electron": "1.4.15",
+    "gulp": "3.9.1",
+    "gulp-atom-electron": "1.10.0",
+    "gulp-sass": "3.1.0",
+    "gulp-shell": "0.6.2",
+    "gulp-symdest": "1.1.0",
+    "run-sequence": "1.2.2",
+    "typescript": "2.2.1",
+    "typings": "2.1.0"
+  },
+  "keywords": [
+    "Angular",
+    "Angular2",
+    "typescript"
+  ],
+  "author": "Jo-Ries Canino",
+  "license": "MIT",
+  "description": "An easy to use Electron v1.4.14 and Angular 2 version 2.4.8"
+}

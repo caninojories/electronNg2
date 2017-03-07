@@ -1,0 +1,9 @@
+dist
+typings
+node_modules
+.vscode
+.DS_Store
+packages
+gulp-electron-cache
+bower_components
+.idea

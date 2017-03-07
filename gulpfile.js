@@ -7,6 +7,7 @@ var gulp = require('gulp'),
     sass = require('gulp-sass'),
     shell = require('gulp-shell'),
     config = require("./project-config"),
+    args = require('yargs').argv,
     runSeq = require('run-sequence');
 
 /**
@@ -113,7 +114,9 @@ gulp.task('electron:build:linux', function () {
     gulp.src(['dist/**/*'])
         .pipe(electron({
             version: '1.4.15',
-            platform: 'linux'
+            platform: 'linux',
+            arch: 'x64',
+            token: args.token
         }))
         .pipe(symdest('packages/linux'));
 });

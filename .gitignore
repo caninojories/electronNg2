@@ -7,3 +7,4 @@ packages
 gulp-electron-cache
 bower_components
 .idea
+*debug.log

@@ -17,14 +17,15 @@
     "noImplicitAny": true,
     "noImplicitReturns": true,
     "noImplicitUseStrict": false,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "typeRoots" : ["node_modules/@types"]
   },
-  "exclude": [
-    "!node_modules/@types",
-    "!app",
-    "node_modules",
-    "dist",
-    "dist/assets/js/vendor",
-    "packages"
-  ]
+  "include": [
+    "app/**/*"
+   ],
+   "exclude": [
+     "**/*.spec.ts",
+     "dist",
+     "packages"
+   ]
 }

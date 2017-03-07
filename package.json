@@ -41,8 +41,7 @@
     "gulp-shell": "0.6.2",
     "gulp-symdest": "1.1.0",
     "run-sequence": "1.2.2",
-    "typescript": "2.2.1",
-    "typings": "2.1.0"
+    "typescript": "2.2.1"
   },
   "keywords": [
     "Angular",

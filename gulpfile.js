@@ -93,6 +93,10 @@ gulp.task("typescript:watch", function () {
     gulp.watch('./app/**/*.ts', ['electron:transpile:ts']);
 });
 
+gulp.task('watch', function(done) {
+  return runSeq('sass:watch', 'typescript:watch', done);
+})
+
 /**
  * Builds the OSX application and places it in our
  * 'packages' folder

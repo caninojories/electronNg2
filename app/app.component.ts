@@ -1,10 +1,18 @@
-import { Component } from '@angular/core';
+import {
+  Component
+} from '@angular/core';
+import {
+  Router,
+  ActivatedRoute
+} from '@angular/router';
 const ipcRenderer = require('electron').ipcRenderer;
 
 @Component({
   moduleId: module.id,
   selector: 'my-app',
-  templateUrl: 'app.component.html'
+  template: `
+    <router-outlet></router-outlet>
+  `,
 })
 export class AppComponent {
 

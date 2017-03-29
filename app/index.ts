@@ -19,10 +19,11 @@ app.on('ready', () => {
     width: 1280,
     height: 720,
     minWidth : 1280,
-    minHeight : 720
+    minHeight : 720,
   });
+  mainWindow.setMenu(null);
   mainWindow.loadURL('file://' + __dirname + '/index.html');
-  // mainWindow.webContents.openDevTools();
+  mainWindow.webContents.openDevTools();
   mainWindow.on('closed', () =>  {
     mainWindow = null;
   });

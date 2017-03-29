@@ -8,7 +8,6 @@ import {
 import {
   PageNotFoundComponent
 } from './404/page.not.found.component';
-
 const appRoutes: Routes = [{
   path      : '',
   component : IndexComponent

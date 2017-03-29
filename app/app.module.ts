@@ -17,6 +17,12 @@ import {
 import {
   PageNotFoundComponent
 } from './components/404/page.not.found.component';
+import {
+  GameSelectionComponent
+} from './components/selection/game.selection.component';
+import {
+  GameSelectionModule
+} from './components/selection/game.selection.module.component';
 /* routing */
 import {
   rootRouting
@@ -25,12 +31,13 @@ import {
   imports: [
     BrowserModule,
     FormsModule,
-    rootRouting
+    rootRouting,
+    GameSelectionModule
   ],
   declarations: [
     AppComponent,
     IndexComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
   ],
   bootstrap: [AppComponent]
 })

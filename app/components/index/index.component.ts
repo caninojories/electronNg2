@@ -12,4 +12,15 @@ import {
   styleUrls   : ['./index.component.less']
 })
 export class IndexComponent {
+  constructor(
+  private _router       : Router,
+  ) {}
+
+  ngOnInit() {
+    console.log('here')
+  }
+
+  enterSelection() {
+    this._router.navigate(['/game-selection']);
+  }
 }

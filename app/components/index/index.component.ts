@@ -16,10 +16,6 @@ export class IndexComponent {
   private _router       : Router,
   ) {}
 
-  ngOnInit() {
-    console.log('here')
-  }
-
   enterSelection() {
     this._router.navigate(['/game-selection']);
   }

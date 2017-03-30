@@ -15,7 +15,13 @@ app.on('window-all-closed', () => {
 });
 
 app.on('ready', () => {
-  mainWindow = new BrowserWindow({width: 800, height: 600});
+  mainWindow = new BrowserWindow({
+    width: 1280,
+    height: 720,
+    minWidth : 1280,
+    minHeight : 720,
+  });
+  mainWindow.setMenu(null);
   mainWindow.loadURL('file://' + __dirname + '/index.html');
   mainWindow.webContents.openDevTools();
   mainWindow.on('closed', () =>  {
